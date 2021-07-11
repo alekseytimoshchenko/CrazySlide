@@ -11,7 +11,19 @@
 		9A6747932698B4D200FE8057 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6747922698B4D200FE8057 /* ContentView.swift */; };
 		9A6747952698B4D500FE8057 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A6747942698B4D500FE8057 /* Assets.xcassets */; };
 		9A6747982698B4D500FE8057 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A6747972698B4D500FE8057 /* Preview Assets.xcassets */; };
+		9A82B7F2269AE70B009B5D6C /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A82B7F1269AE70B009B5D6C /* Game.swift */; };
+		9A91818D269B663100E3D53A /* CrazySlideTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A91818C269B663100E3D53A /* CrazySlideTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9A91818F269B663100E3D53A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9A6747852698B4D200FE8057 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9A67478C2698B4D200FE8057;
+			remoteInfo = CrazySlide;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		9A67478D2698B4D200FE8057 /* CrazySlide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrazySlide.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -20,10 +32,21 @@
 		9A6747942698B4D500FE8057 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9A6747972698B4D500FE8057 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9A6747992698B4D500FE8057 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A82B7F1269AE70B009B5D6C /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		9A91818A269B663100E3D53A /* CrazySlideTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CrazySlideTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A91818C269B663100E3D53A /* CrazySlideTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrazySlideTests.swift; sourceTree = "<group>"; };
+		9A91818E269B663100E3D53A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		9A67478A2698B4D200FE8057 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A918187269B663100E3D53A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -37,6 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				9A67478F2698B4D200FE8057 /* CrazySlide */,
+				9A91818B269B663100E3D53A /* CrazySlideTests */,
 				9A67478E2698B4D200FE8057 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -45,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				9A67478D2698B4D200FE8057 /* CrazySlide.app */,
+				9A91818A269B663100E3D53A /* CrazySlideTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -52,10 +77,9 @@
 		9A67478F2698B4D200FE8057 /* CrazySlide */ = {
 			isa = PBXGroup;
 			children = (
-				9A6747902698B4D200FE8057 /* CrazySlideApp.swift */,
-				9A6747922698B4D200FE8057 /* ContentView.swift */,
-				9A6747942698B4D500FE8057 /* Assets.xcassets */,
-				9A6747992698B4D500FE8057 /* Info.plist */,
+				9A82B7F0269AE628009B5D6C /* App */,
+				9A82B7EF269AE61E009B5D6C /* Views */,
+				9A82B7EE269AE616009B5D6C /* Models */,
 				9A6747962698B4D500FE8057 /* Preview Content */,
 			);
 			path = CrazySlide;
@@ -67,6 +91,41 @@
 				9A6747972698B4D500FE8057 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9A82B7EE269AE616009B5D6C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9A82B7F1269AE70B009B5D6C /* Game.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9A82B7EF269AE61E009B5D6C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9A6747922698B4D200FE8057 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9A82B7F0269AE628009B5D6C /* App */ = {
+			isa = PBXGroup;
+			children = (
+				9A6747902698B4D200FE8057 /* CrazySlideApp.swift */,
+				9A6747942698B4D500FE8057 /* Assets.xcassets */,
+				9A6747992698B4D500FE8057 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		9A91818B269B663100E3D53A /* CrazySlideTests */ = {
+			isa = PBXGroup;
+			children = (
+				9A91818C269B663100E3D53A /* CrazySlideTests.swift */,
+				9A91818E269B663100E3D53A /* Info.plist */,
+			);
+			path = CrazySlideTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -89,6 +148,24 @@
 			productReference = 9A67478D2698B4D200FE8057 /* CrazySlide.app */;
 			productType = "com.apple.product-type.application";
 		};
+		9A918189269B663100E3D53A /* CrazySlideTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A918193269B663100E3D53A /* Build configuration list for PBXNativeTarget "CrazySlideTests" */;
+			buildPhases = (
+				9A918186269B663100E3D53A /* Sources */,
+				9A918187269B663100E3D53A /* Frameworks */,
+				9A918188269B663100E3D53A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9A918190269B663100E3D53A /* PBXTargetDependency */,
+			);
+			name = CrazySlideTests;
+			productName = CrazySlideTests;
+			productReference = 9A91818A269B663100E3D53A /* CrazySlideTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -100,6 +177,10 @@
 				TargetAttributes = {
 					9A67478C2698B4D200FE8057 = {
 						CreatedOnToolsVersion = 12.5.1;
+					};
+					9A918189269B663100E3D53A = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 9A67478C2698B4D200FE8057;
 					};
 				};
 			};
@@ -117,6 +198,7 @@
 			projectRoot = "";
 			targets = (
 				9A67478C2698B4D200FE8057 /* CrazySlide */,
+				9A918189269B663100E3D53A /* CrazySlideTests */,
 			);
 		};
 /* End PBXProject section */
@@ -131,6 +213,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9A918188269B663100E3D53A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -138,12 +227,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A82B7F2269AE70B009B5D6C /* Game.swift in Sources */,
 				9A6747932698B4D200FE8057 /* ContentView.swift in Sources */,
 				9A6747912698B4D200FE8057 /* CrazySlideApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9A918186269B663100E3D53A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A91818D269B663100E3D53A /* CrazySlideTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9A918190269B663100E3D53A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9A67478C2698B4D200FE8057 /* CrazySlide */;
+			targetProxy = 9A91818F269B663100E3D53A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		9A67479A2698B4D500FE8057 /* Debug */ = {
@@ -271,7 +377,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"CrazySlide/Preview Content\"";
 				DEVELOPMENT_TEAM = SZ3552D2LU;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = CrazySlide/Info.plist;
+				INFOPLIST_FILE = CrazySlide/App/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -293,7 +399,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"CrazySlide/Preview Content\"";
 				DEVELOPMENT_TEAM = SZ3552D2LU;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = CrazySlide/Info.plist;
+				INFOPLIST_FILE = CrazySlide/App/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -303,6 +409,46 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9A918191269B663100E3D53A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SZ3552D2LU;
+				INFOPLIST_FILE = CrazySlideTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mytest.CrazySlideTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CrazySlide.app/CrazySlide";
+			};
+			name = Debug;
+		};
+		9A918192269B663100E3D53A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SZ3552D2LU;
+				INFOPLIST_FILE = CrazySlideTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mytest.CrazySlideTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CrazySlide.app/CrazySlide";
 			};
 			name = Release;
 		};
@@ -323,6 +469,15 @@
 			buildConfigurations = (
 				9A67479D2698B4D500FE8057 /* Debug */,
 				9A67479E2698B4D500FE8057 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A918193269B663100E3D53A /* Build configuration list for PBXNativeTarget "CrazySlideTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A918191269B663100E3D53A /* Debug */,
+				9A918192269B663100E3D53A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
